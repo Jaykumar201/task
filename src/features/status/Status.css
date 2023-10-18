@@ -1,0 +1,116 @@
+.grid-container {
+    background-color: white;
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 columns with equal width */
+    gap: 10px;
+     /* Optional gap between grid items */
+  }
+
+  .grid-item {
+    width: auto;
+    background-color: white; /* Background color for the grid item */
+    padding: 5px; /* Padding around the grid item content */
+    text-align: center; /* Center-align the content */
+    /* Additional properties, as needed */
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .card{
+    background-color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: auto;
+    border: 1px solid rgba(0, 0, 0, 0.119);
+    border-radius: 10px;
+    margin: 20px auto;
+    /* padding: 5px; */
+    padding: 1px 5px 5px 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .footer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .icon{
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    margin: 5px;
+    border-radius: 20%;
+  }
+  
+  .featReq{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    color: #778282;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+  }
+  .circle{
+    width: 12px;
+    height: 12px;
+    margin: 0 3px 0 -3px;
+    border-radius: 50%;
+    background-color: #b7c4c4;
+  }
+  
+  .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    color: rgb(87, 90, 87);
+  }
+  
+  .img-container{
+    position: relative;
+  }
+  
+  .status{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background-color: gainsboro;
+    border-radius: 50%;
+    border: white 2px solid;
+    padding: 1px;
+  }
+  .middle{
+    font-size: 20px;
+    font-weight: 600;
+    
+    margin: 0px 10px;
+    margin-top: -4px;
+  }
+  
+  .userImg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+ @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  }
+  
+  /* Responsive styles for even smaller screens */
+  @media screen and (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+  }

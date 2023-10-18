@@ -1,0 +1,33 @@
+.grid-container {
+    background-color: #f4f5f8;
+    display: grid;
+    width: auto;
+     /* Creates 5 columns with equal width */
+    gap: 10px;
+     /* Optional gap between grid items */
+  }
+
+
+  .grid-item {
+    width: auto;
+    background-color: #f4f5f8; /* Background color for the grid item */
+    padding: 5px; /* Padding around the grid item content */
+    text-align: center; /* Center-align the content */
+    /* Additional properties, as needed */
+  }
+
+
+
+ @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  }
+ 
+  /* Responsive styles for even smaller screens */
+  @media screen and (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+  }
+
